@@ -1,0 +1,24 @@
+// @use './fonts.scss' as *;
+// @use './colors.scss'as *;
+@mixin flex_box($jc: center, $ai: center, $fd: row) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+
+@mixin position($p: absolute, $t: 0%, $l: 0%) {
+    position: $p;
+    top: $t;
+    left: $l;
+}
+
+@mixin bg-light {
+    background: #ffbdd7;
+    background: radial-gradient(circle, rgba(255, 189, 215, 1) 33%, rgba(232, 149, 229, 1) 100%);
+}
+
+// @mixin theme($bg:$main-light, $color: $font-light) {
+//     background: $bg;
+//     color: $color;
+// }

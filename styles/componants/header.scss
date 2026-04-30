@@ -1,0 +1,54 @@
+@use '../abstracts/shares.scss' as *;
+header {
+    .navbar {
+        width: 100%;
+        padding: 0;
+        background-color: $nav-light;
+        .container {
+            width: 90%;
+        }
+        .navbar-brand {
+            width: 7%;
+            @include flex_box(center, center, row);
+            position: relative;
+            img {
+                width: 80%;
+                position: relative;
+            }
+            p {
+                @include position(absolute, 60%, 0%);
+                font-size: 30px;
+                color: $font-dark;
+            }
+        }
+        .nav-item {
+            .nav-link {
+                .toggle {
+                    visibility: hidden;
+                }
+                .label {
+                    background-color: transparent;
+                    border: 2px solid $font-light;
+                    width: 80px;
+                    height: 40px;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    i {
+                        position: absolute;
+                        z-index: 1;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        margin-inline: 5px;
+                        color: black;
+                    }
+                    i:nth-of-type(2) {
+                        right: 0;
+                        color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
