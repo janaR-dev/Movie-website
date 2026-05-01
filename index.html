@@ -6,59 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies Box</title>
     <link rel="stylesheet" href="styles/output.css">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="shortcut icon" href="images/main/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/main/cats-icon.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar scroll</a>
-                <form class="d-flex m-auto" role="search">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container m-auto">
+                <a class="navbar-brand" href="#">
+                    <img src="images/main/cat-logo-light.png" alt="" class="img-fluid">
+                    <p>CatFlix</p>
+                </a>
+                <form class="d-flex m-auto align-items-center" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <a href="#"><i class="fa-solid fa-filter text-light"></i></a>
+                    <button class="btn" type="submit">Search</button>
                 </form>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
+                <div class="collapse flex-grow-0 navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-lg-auto  my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Similar movies</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Link
-                                </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"><i class="fa-regular fa-bell"></i></a>
+
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Link</a>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"><span>Register</span></a>
+
                         </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">
+                                <div class="themes">
+                                    <input type="checkbox" class="toggle" id="mode">
+                                    <label for="mode" class="label"> 
+                                        <div class="slider"></div>
+                                        <img src="images/main/cat-up.png" alt="" class="img-fluid cat-up">
+                                        <img src="images/main/cat-sleep.png" alt="" class="img-fluid cat-sleep">
+                                    </label>
+
+                                </div>
+                            </a>
+
+                        </li>
+
                     </ul>
 
                 </div>
             </div>
         </nav>
+        <div class="intro">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/abstract-1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/abstract-2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/abstract-3.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/abstract-4.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/abstract-5.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/abstract-6.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/abstract-7.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/abstract-8.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/abstract-9.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+
     </header>
+    <section id="Recomendations">
+        <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="top-rated">
+        <div class="container ">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </section>
+    <section id="popular">
+    </section>
 
 
     <script src="script/jq.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script/index.js"></script>
     <script src="script/bootstrap.bundle.js"></script>
     <script src="script/api-fitch.js"></script>
     <script src="script/funs.js"></script>
-    <script src="script/index.js"></script>
 </body>
 
 </html>

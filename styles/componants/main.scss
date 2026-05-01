@@ -1,1 +1,48 @@
 @use '../abstracts/shares.scss';
+#Recomendations {
+    .swiper {
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+#top-rated {
+    .container {
+        max-height: 80vh;
+        .swiper {
+            width: 100%;
+            height: 100%;
+            max-height: 60vh;
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #444;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+#popular {}

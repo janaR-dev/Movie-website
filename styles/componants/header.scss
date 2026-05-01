@@ -18,37 +18,55 @@ header {
             p {
                 @include position(absolute, 60%, 0%);
                 font-size: 30px;
-                color: $font-dark;
+                color: white;
+                font-weight: bold;
             }
         }
         .nav-item {
+            align-content: center;
             .nav-link {
                 .toggle {
                     visibility: hidden;
+                    &:checked+.label {
+                        background-color: transparent;
+                        border: 2px solid $outline-dark;
+                    }
                 }
                 .label {
-                    background-color: transparent;
-                    border: 2px solid $font-light;
-                    width: 80px;
-                    height: 40px;
+                    background-color: $main-light;
+                    border: 2px solid $outline-light;
+                    width: 50px;
+                    height: 50px;
                     border-radius: 50px;
                     cursor: pointer;
                     display: inline-block;
                     position: relative;
-                    i {
+                    transition-duration: 0.5s;
+                    img {
                         position: absolute;
                         z-index: 1;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        margin-inline: 5px;
-                        color: black;
-                    }
-                    i:nth-of-type(2) {
-                        right: 0;
-                        color: transparent;
+                        top: 0%;
+                        width: 100%;
                     }
                 }
             }
         }
+    }
+    .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
