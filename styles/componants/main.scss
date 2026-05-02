@@ -1,4 +1,4 @@
-@use '../abstracts/shares.scss';
+@use '../abstracts/shares.scss' as *;
 #Recomendations {
     .swiper {
         width: 100%;
@@ -45,4 +45,41 @@
     }
 }
 
-#popular {}
+#popular {
+    .genere {
+        .items {
+            .card {
+                margin: auto;
+                border-radius: 25px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                }
+                .card-body {
+                    margin: 10px;
+                    background-color: #444;
+                    border-radius: 20px;
+                }
+                background-color: aqua;
+            }
+        }
+        .genere-title {
+            width: fit-content;
+            padding-inline: 20px;
+            background-color: $nav-light;
+            border-radius: 15px;
+            border: 2px solid;
+            &:hover {
+                cursor: pointer;
+            }
+            .inner {
+                @include flex_box;
+                .paw-icon {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
