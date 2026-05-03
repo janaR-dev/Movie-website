@@ -46,9 +46,36 @@
 }
 
 #popular {
+    .filter {
+        color: $main-dark;
+        h4 {
+            a {
+                position: relative;
+                i {
+                    width: 100%;
+                    @include position(absolute, 50%);
+                    transform: translateY(-25%);
+                    color: $main-dark;
+                    font-size: 12px;
+                    margin-left: 12px;
+                }
+            }
+        }
+        .filter-categories {
+            @include flex_box;
+            .nav-tabs {
+                .nav-link {
+                    color: $main-dark;
+                }
+                width: fit-content;
+            }
+        }
+    }
     .genere {
         .items {
             .card {
+                width: 200px;
+                background-color: $card-light;
                 margin: auto;
                 border-radius: 25px;
                 overflow: hidden;
@@ -57,10 +84,20 @@
                 }
                 .card-body {
                     margin: 10px;
-                    background-color: #444;
+                    background-color: $card-light-text;
                     border-radius: 20px;
+                    text-align: center;
+                    a {
+                        background-color: transparent;
+                        transition-duration: .5s;
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                    .card-title {
+                        text-align: start;
+                    }
                 }
-                background-color: aqua;
             }
         }
         .genere-title {

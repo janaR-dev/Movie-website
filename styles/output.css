@@ -12244,7 +12244,37 @@ header .swiper-slide img {
   object-fit: cover;
 }
 
+#popular .filter {
+  color: #010221;
+}
+#popular .filter h4 a {
+  position: relative;
+}
+#popular .filter h4 a i {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-25%);
+  color: #010221;
+  font-size: 12px;
+  margin-left: 12px;
+}
+#popular .filter .filter-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#popular .filter .filter-categories .nav-tabs .nav-link {
+  color: #010221;
+}
+#popular .filter .filter-categories .nav-tabs {
+  width: fit-content;
+}
 #popular .genere .items .card {
+  width: 200px;
+  background-color: rgba(64, 0, 54, 0.7294117647);
   margin: auto;
   border-radius: 25px;
   overflow: hidden;
@@ -12254,11 +12284,19 @@ header .swiper-slide img {
 }
 #popular .genere .items .card .card-body {
   margin: 10px;
-  background-color: #444;
+  background-color: #FF81D0;
   border-radius: 20px;
+  text-align: center;
 }
-#popular .genere .items .card {
-  background-color: aqua;
+#popular .genere .items .card .card-body a {
+  background-color: transparent;
+  transition-duration: 0.5s;
+}
+#popular .genere .items .card .card-body a:hover {
+  color: white;
+}
+#popular .genere .items .card .card-body .card-title {
+  text-align: start;
 }
 #popular .genere .genere-title {
   width: fit-content;

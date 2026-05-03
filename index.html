@@ -25,7 +25,6 @@
                 </a>
                 <form class="d-flex m-auto align-items-center" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <a href="#"><i class="fa-solid fa-filter text-light"></i></a>
                     <button class="btn" type="submit">Search</button>
                 </form>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,29 +39,30 @@
                             <a class="nav-link" href="#">Watch later</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#"><i class="fa-regular fa-bell"></i></a>
+                            <a class="nav-link" href="#"><i class="fa-regular fa-heart"></i></a>
 
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="#"><span>Register</span></a>
 
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#">
-                                <div class="themes">
-                                    <input type="checkbox" class="toggle" id="mode">
-                                    <label for="mode" class="label"> 
+
+
+                    </ul>
+                    <div class="nav-item ">
+                        <a class="nav-link" href="#">
+                            <div class="themes">
+                                <input type="checkbox" class="toggle" id="mode">
+                                <label for="mode" class="label"> 
                                         <div class="slider"></div>
                                         <img src="images/main/cat-up.png" alt="" class="img-fluid cat-up">
                                         <img src="images/main/cat-sleep.png" alt="" class="img-fluid cat-sleep">
-                                    </label>
+                                </label>
 
-                                </div>
-                            </a>
+                            </div>
+                        </a>
 
-                        </li>
-
-                    </ul>
+                    </div>
 
                 </div>
             </div>
@@ -156,7 +156,47 @@
             <img src="images/main/title-light.png" class="title-img">
         </div>
         <div class="container mb-2">
+            <div class="filter">
+                <h4>Filter <a href="#"><i class="fa-solid fa-filter "></i></a>
+                </h4>
+                <nav class="filter-categories ">
+                    <div class="nav nav-tabs " id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Genere</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Date</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Language</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Rate</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <input type="checkbox" name="" id="">
+                        <label for=""></label>
+                        <input type="checkbox" name="" id="">
+                        <label for=""></label>
+                        <input type="checkbox" name="" id="">
+                        <label for=""></label>
+                        <input type="checkbox" name="" id="">
+                        <label for=""></label>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <input type="checkbox" name="" id="">
+                        <label for=""></label>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                        <input type="checkbox" name="" id="">
+                        <label for=""></label>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                        <input type="checkbox" name="" id="">
+                        <label for=""></label>
+                    </div>
+
+                </div>
+
+            </div>
             <div class="genere">
+
                 <div class="genere-title my-4">
                     <div class="inner">
                         <lord-icon class="paw-icon light" src="https://cdn.lordicon.com/kdcogpuc.json" trigger="hover" stroke="bold" colors="primary:#ee66aa,secondary:#e8308c">
@@ -170,527 +210,525 @@
 
                 <div class="items row m-auto">
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/main/animal.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                        <div class="card">
+                            <img src="images/main/animal.png " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/main/download (6).jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="images/main/download (6).jpg " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="genere">
-                <div class="genere-title my-4">
-                    <div class="inner">
-                        <lord-icon class="paw-icon light" src="https://cdn.lordicon.com/kdcogpuc.json" trigger="hover" stroke="bold" colors="primary:#ee66aa,secondary:#e8308c">
+            <div class="genere ">
+                <div class="genere-title my-4 ">
+                    <div class="inner ">
+                        <lord-icon class="paw-icon light " src="https://cdn.lordicon.com/kdcogpuc.json " trigger="hover " stroke="bold " colors="primary:#ee66aa,secondary:#e8308c ">
                         </lord-icon>
-                        <lord-icon class=" paw-icon dark d-none" src="https://cdn.lordicon.com/inoabgrx.json" trigger="hover" colors="primary:#4030e8,secondary:#4f1091">
+                        <lord-icon class=" paw-icon dark d-none " src="https://cdn.lordicon.com/inoabgrx.json " trigger="hover " colors="primary:#4030e8,secondary:#4f1091 ">
                         </lord-icon>
                         <h3>genere type</h3>
 
                     </div>
                 </div>
 
-                <div class="items row m-auto">
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                <div class="items row m-auto ">
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="genere">
-                <div class="genere-title my-4">
-                    <div class="inner">
-                        <lord-icon class="paw-icon light" src="https://cdn.lordicon.com/kdcogpuc.json" trigger="hover" stroke="bold" colors="primary:#ee66aa,secondary:#e8308c">
+            <div class="genere ">
+                <div class="genere-title my-4 ">
+                    <div class="inner ">
+                        <lord-icon class="paw-icon light " src="https://cdn.lordicon.com/kdcogpuc.json " trigger="hover " stroke="bold " colors="primary:#ee66aa,secondary:#e8308c ">
                         </lord-icon>
-                        <lord-icon class=" paw-icon dark d-none" src="https://cdn.lordicon.com/inoabgrx.json" trigger="hover" colors="primary:#4030e8,secondary:#4f1091">
+                        <lord-icon class=" paw-icon dark d-none " src="https://cdn.lordicon.com/inoabgrx.json " trigger="hover " colors="primary:#4030e8,secondary:#4f1091 ">
                         </lord-icon>
                         <h3>genere type</h3>
 
                     </div>
                 </div>
 
-                <div class="items row m-auto">
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                <div class="items row m-auto ">
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="genere">
-                <div class="genere-title my-4">
-                    <div class="inner">
-                        <lord-icon class="paw-icon light" src="https://cdn.lordicon.com/kdcogpuc.json" trigger="hover" stroke="bold" colors="primary:#ee66aa,secondary:#e8308c">
+            <div class="genere ">
+                <div class="genere-title my-4 ">
+                    <div class="inner ">
+                        <lord-icon class="paw-icon light " src="https://cdn.lordicon.com/kdcogpuc.json " trigger="hover " stroke="bold " colors="primary:#ee66aa,secondary:#e8308c ">
                         </lord-icon>
-                        <lord-icon class=" paw-icon dark d-none" src="https://cdn.lordicon.com/inoabgrx.json" trigger="hover" colors="primary:#4030e8,secondary:#4f1091">
+                        <lord-icon class=" paw-icon dark d-none " src="https://cdn.lordicon.com/inoabgrx.json " trigger="hover " colors="primary:#4030e8,secondary:#4f1091 ">
                         </lord-icon>
                         <h3>genere type</h3>
 
                     </div>
                 </div>
 
-                <div class="items row m-auto">
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                <div class="items row m-auto ">
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">View</a>
+                    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+                        <div class="card " ">
+                            <img src="... " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+
+                                <a href="# " class="btn ">View</a>
                             </div>
                         </div>
                     </div>
@@ -700,19 +738,19 @@
         </div>
     </section>
     <footer>
-        <div class="container">
+        <div class="container ">
             <p>Jana Ramadan Salah original work</p>
         </div>
     </footer>
 
 
-    <script src="script/jq.js"></script>
-    <script src="https://cdn.lordicon.com/lordicon.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="script/bootstrap.bundle.js"></script>
-    <script src="script/index.js"></script>
-    <script src="script/api-fitch.js"></script>
-    <script src="script/funs.js"></script>
+    <script src="script/jq.js "></script>
+    <script src="https://cdn.lordicon.com/lordicon.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js "></script>
+    <script src="script/bootstrap.bundle.js "></script>
+    <script src="script/index.js "></script>
+    <script src="script/api-fitch.js "></script>
+    <script src="script/funs.js "></script>
 </body>
 
 </html>
