@@ -12247,6 +12247,23 @@ header .swiper-slide img {
 #popular .filter {
   color: #010221;
 }
+#popular .filter input {
+  visibility: hidden;
+  position: absolute;
+}
+#popular .filter label {
+  position: relative;
+  margin: 10px;
+  padding-block: 5px;
+  padding-inline: 8px;
+  border: 2px solid #010221;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+#popular .filter input:checked + label {
+  background-color: #fb9bd4;
+}
 #popular .filter h4 a {
   position: relative;
 }
@@ -12272,49 +12289,52 @@ header .swiper-slide img {
 #popular .filter .filter-categories .nav-tabs {
   width: fit-content;
 }
-#popular .genere .items .card {
+#popular .filter .filter-categories {
+  margin-bottom: 15px;
+}
+#popular .genre .items .card {
   width: 200px;
   background-color: rgba(64, 0, 54, 0.7294117647);
   margin: auto;
   border-radius: 25px;
   overflow: hidden;
 }
-#popular .genere .items .card img {
+#popular .genre .items .card img {
   width: 100%;
 }
-#popular .genere .items .card .card-body {
+#popular .genre .items .card .card-body {
   margin: 10px;
   background-color: #FF81D0;
   border-radius: 20px;
   text-align: center;
 }
-#popular .genere .items .card .card-body a {
+#popular .genre .items .card .card-body a {
   background-color: transparent;
   transition-duration: 0.5s;
 }
-#popular .genere .items .card .card-body a:hover {
+#popular .genre .items .card .card-body a:hover {
   color: white;
 }
-#popular .genere .items .card .card-body .card-title {
+#popular .genre .items .card .card-body .card-title {
   text-align: start;
 }
-#popular .genere .genere-title {
+#popular .genre .genre-title {
   width: fit-content;
   padding-inline: 20px;
   background-color: #F2C9E4;
   border-radius: 15px;
   border: 2px solid;
 }
-#popular .genere .genere-title:hover {
+#popular .genre .genre-title:hover {
   cursor: pointer;
 }
-#popular .genere .genere-title .inner {
+#popular .genre .genre-title .inner {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-#popular .genere .genere-title .inner .paw-icon {
+#popular .genre .genre-title .inner .paw-icon {
   width: 30px;
   height: 30px;
   margin-right: 5px;

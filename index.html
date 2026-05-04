@@ -161,49 +161,79 @@
                 </h4>
                 <nav class="filter-categories ">
                     <div class="nav nav-tabs " id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Genere</button>
-                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Date</button>
-                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Language</button>
-                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Rate</button>
+                        <button class="nav-link active" id="nav-genre-tab" data-bs-toggle="tab" data-bs-target="#nav-genre" type="button" role="tab" aria-controls="nav-genre" aria-selected="true">genre</button>
+                        <button class="nav-link" id="nav-Date-tab" data-bs-toggle="tab" data-bs-target="#nav-Date" type="button" role="tab" aria-controls="nav-Date" aria-selected="false">Date</button>
+                        <button class="nav-link" id="nav-Language-tab" data-bs-toggle="tab" data-bs-target="#nav-Language" type="button" role="tab" aria-controls="nav-Language" aria-selected="false">Language</button>
+                        <button class="nav-link" id="nav-age-tab" data-bs-toggle="tab" data-bs-target="#nav-age" type="button" role="tab" aria-controls="nav-age" aria-selected="false">Age Category</button>
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                        <input type="checkbox" name="" id="">
-                        <label for=""></label>
-                        <input type="checkbox" name="" id="">
-                        <label for=""></label>
-                        <input type="checkbox" name="" id="">
-                        <label for=""></label>
-                        <input type="checkbox" name="" id="">
-                        <label for=""></label>
+                    <div class="tab-pane fade show active" id="nav-genre" role="tabpanel" aria-labelledby="nav-genre-tab" tabindex="0">
+                        <input type="checkbox" name="Action" id="Action">
+                        <label for="Action">Action</label>
+                        <input type="checkbox" name="Animation" id="Animation">
+                        <label for="Animation">Animation</label>
+                        <input type="checkbox" name="Comedy" id="Comedy">
+                        <label for="Comedy">Comedy</label>
+                        <input type="checkbox" name="Horror" id="Horror">
+                        <label for="Horror">Horror</label>
+                        <input type="checkbox" name="Fantasy" id="Fantasy">
+                        <label for="Fantasy">Fantasy</label>
+                        <input type="checkbox" name="Mystery" id="Mystery">
+                        <label for="Mystery">Mystery</label>
+                        <input type="checkbox" name="Thriller" id="Thriller">
+                        <label for="Thriller">Thriller</label>
+                        <input type="checkbox" name="Historie" id="Historie">
+                        <label for="Historie">History</label>
+                        <input type="checkbox" name="Drama" id="Drama">
+                        <label for="Drama">Drama</label>
+                        <input type="checkbox" name="Musik" id="Musik">
+                        <label for="Musik">Musik</label>
+                        <input type="checkbox" name="SciFi" id="SciFi">
+                        <label for="SciFi">Science Fiction</label>
+                        <input type="checkbox" name="Western" id="Western">
+                        <label for="Western">Western</label>
 
                     </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                    <div class="tab-pane fade" id="nav-Date" role="tabpanel" aria-labelledby="nav-Date-tab" tabindex="0">
                         <input type="checkbox" name="" id="">
                         <label for=""></label>
                     </div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                        <input type="checkbox" name="" id="">
-                        <label for=""></label>
+                    <div class="tab-pane fade" id="nav-Language" role="tabpanel" aria-labelledby="nav-Language-tab" tabindex="1">
+                        <input type="checkbox" name="en" id="en">
+                        <label for="en">English</label>
+                        <input type="checkbox" name="arab" id="arab">
+                        <label for="arab">Arabic</label>
+                        <input type="checkbox" name="kr" id="kr">
+                        <label for="kr">Korean</label>
+                        <input type="checkbox" name="ger" id="ger">
+                        <label for="ger">German</label>
+                        <input type="checkbox" name="jp" id="jp">
+                        <label for="jp">Japanese</label>
                     </div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                        <input type="checkbox" name="" id="">
-                        <label for=""></label>
+                    <div class="tab-pane fade" id="nav-age" role="tabpanel" aria-labelledby="nav-age-tab" tabindex="2">
+                        <input type="checkbox" name="under6" id="under6">
+                        <label for="age">under 6</label>
+                        <input type="checkbox" name="6-10" id="6-10">
+                        <label for="6-10">between 6-10</label>
+                        <input type="checkbox" name="under16" id="under16">
+                        <label for="under16">under 16</label>
+                        <input type="checkbox" name="16-18" id="16-18">
+                        <label for="16-18">between 16-18</label>
                     </div>
 
                 </div>
 
             </div>
-            <div class="genere">
+            <div class="genre">
 
-                <div class="genere-title my-4">
+                <div class="genre-title my-4">
                     <div class="inner">
                         <lord-icon class="paw-icon light" src="https://cdn.lordicon.com/kdcogpuc.json" trigger="hover" stroke="bold" colors="primary:#ee66aa,secondary:#e8308c">
                         </lord-icon>
                         <lord-icon class=" paw-icon dark d-none" src="https://cdn.lordicon.com/inoabgrx.json" trigger="hover" colors="primary:#4030e8,secondary:#4f1091">
                         </lord-icon>
-                        <h3>genere type</h3>
+                        <h3>Action</h3>
 
                     </div>
                 </div>
@@ -329,14 +359,14 @@
                     </div>
                 </div>
             </div>
-            <div class="genere ">
-                <div class="genere-title my-4 ">
+            <div class="genre ">
+                <div class="genre-title my-4 ">
                     <div class="inner ">
                         <lord-icon class="paw-icon light " src="https://cdn.lordicon.com/kdcogpuc.json " trigger="hover " stroke="bold " colors="primary:#ee66aa,secondary:#e8308c ">
                         </lord-icon>
                         <lord-icon class=" paw-icon dark d-none " src="https://cdn.lordicon.com/inoabgrx.json " trigger="hover " colors="primary:#4030e8,secondary:#4f1091 ">
                         </lord-icon>
-                        <h3>genere type</h3>
+                        <h3>Animation</h3>
 
                     </div>
                 </div>
@@ -464,14 +494,14 @@
                     </div>
                 </div>
             </div>
-            <div class="genere ">
-                <div class="genere-title my-4 ">
+            <div class="genre ">
+                <div class="genre-title my-4 ">
                     <div class="inner ">
                         <lord-icon class="paw-icon light " src="https://cdn.lordicon.com/kdcogpuc.json " trigger="hover " stroke="bold " colors="primary:#ee66aa,secondary:#e8308c ">
                         </lord-icon>
                         <lord-icon class=" paw-icon dark d-none " src="https://cdn.lordicon.com/inoabgrx.json " trigger="hover " colors="primary:#4030e8,secondary:#4f1091 ">
                         </lord-icon>
-                        <h3>genere type</h3>
+                        <h3>Comedy</h3>
 
                     </div>
                 </div>
@@ -599,14 +629,14 @@
                     </div>
                 </div>
             </div>
-            <div class="genere ">
-                <div class="genere-title my-4 ">
+            <div class="genre ">
+                <div class="genre-title my-4 ">
                     <div class="inner ">
                         <lord-icon class="paw-icon light " src="https://cdn.lordicon.com/kdcogpuc.json " trigger="hover " stroke="bold " colors="primary:#ee66aa,secondary:#e8308c ">
                         </lord-icon>
                         <lord-icon class=" paw-icon dark d-none " src="https://cdn.lordicon.com/inoabgrx.json " trigger="hover " colors="primary:#4030e8,secondary:#4f1091 ">
                         </lord-icon>
-                        <h3>genere type</h3>
+                        <h3>Family</h3>
 
                     </div>
                 </div>

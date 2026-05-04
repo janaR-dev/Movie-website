@@ -48,6 +48,23 @@
 #popular {
     .filter {
         color: $main-dark;
+        input {
+            visibility: hidden;
+            position: absolute;
+        }
+        label {
+            position: relative;
+            margin: 10px;
+            padding-block: 5px;
+            padding-inline: 8px;
+            border: 2px solid $font-light;
+            border-radius: 10px;
+            transition-duration: .5s;
+            cursor: pointer;
+        }
+        input:checked+label {
+            background-color: #fb9bd4;
+        }
         h4 {
             a {
                 position: relative;
@@ -69,9 +86,10 @@
                 }
                 width: fit-content;
             }
+            margin-bottom: 15px;
         }
     }
-    .genere {
+    .genre {
         .items {
             .card {
                 width: 200px;
@@ -100,7 +118,7 @@
                 }
             }
         }
-        .genere-title {
+        .genre-title {
             width: fit-content;
             padding-inline: 20px;
             background-color: $nav-light;
