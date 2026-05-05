@@ -1,5 +1,4 @@
 let images_params = {
-    "images": {
         "base_url": "http://image.tmdb.org/t/p/",
         "secure_base_url": "https://image.tmdb.org/t/p/",
         "backdrop_sizes": [
@@ -38,60 +37,84 @@ let images_params = {
             "w300",
             "original"
         ]
+
+
     },
-    "change_keys": [
-        "adult",
-        "air_date",
-        "also_known_as",
-        "alternative_titles",
-        "biography",
-        "birthday",
-        "budget",
-        "cast",
-        "certifications",
-        "character_names",
-        "created_by",
-        "crew",
-        "deathday",
-        "episode",
-        "episode_number",
-        "episode_run_time",
-        "freebase_id",
-        "freebase_mid",
-        "general",
-        "genres",
-        "guest_stars",
-        "homepage",
-        "images",
-        "imdb_id",
-        "languages",
-        "name",
-        "network",
-        "origin_country",
-        "original_name",
-        "original_title",
-        "overview",
-        "parts",
-        "place_of_birth",
-        "plot_keywords",
-        "production_code",
-        "production_companies",
-        "production_countries",
-        "releases",
-        "revenue",
-        "runtime",
-        "season",
-        "season_number",
-        "season_regular",
-        "spoken_languages",
-        "status",
-        "tagline",
-        "title",
-        "translations",
-        "tvdb_id",
-        "tvrage_id",
-        "type",
-        "video",
-        "videos"
-    ]
-}
+    genres = {
+        Action: {
+            "id": 28,
+            "name": "Action"
+        },
+        Abenteuer: {
+            "id": 12,
+            "name": "Abenteuer"
+        },
+        Animation: {
+            "id": 16,
+            "name": "Animation"
+        },
+        Comdey: {
+            "id": 35,
+            "name": "Komödie"
+        },
+        Crime: {
+            "id": 80,
+            "name": "Krimi"
+        },
+        Documentry: {
+            "id": 99,
+            "name": "Dokumentarfilm"
+        },
+        Drama: {
+            "id": 18,
+            "name": "Drama"
+        },
+        Family: {
+            "id": 10751,
+            "name": "Familie"
+        },
+        Fantasy: {
+            "id": 14,
+            "name": "Fantasy"
+        },
+        History: {
+            "id": 36,
+            "name": "Historie"
+        },
+        Horror: {
+            "id": 27,
+            "name": "Horror"
+        },
+        Music: {
+            "id": 10402,
+            "name": "Musik"
+        },
+        Mystery: {
+            "id": 9648,
+            "name": "Mystery"
+        },
+        Romance: {
+            "id": 10749,
+            "name": "Liebesfilm"
+        },
+        SciFi: {
+            "id": 878,
+            "name": "Science Fiction"
+        },
+        TV_Film: {
+            "id": 10770,
+            "name": "TV-Film"
+        },
+        Thriller: {
+            "id": 53,
+            "name": "Thriller"
+        },
+        War: {
+            "id": 10752,
+            "name": "Kriegsfilm"
+        },
+        Western: {
+            "id": 37,
+            "name": "Western"
+        }
+    };

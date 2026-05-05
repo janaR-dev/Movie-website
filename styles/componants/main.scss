@@ -22,24 +22,53 @@
 
 #top-rated {
     .container {
-        max-height: 80vh;
         .swiper {
             width: 100%;
-            height: 100%;
-            max-height: 60vh;
-            .swiper-slide {
-                text-align: center;
-                font-size: 18px;
-                background: #444;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            max-height: 90vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            .swiper-pagination {
+                position: absolute;
             }
-            img {
-                display: block;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+            .swiper-wrapper {
+                position: relative;
+                height: auto;
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    display: flex;
+                    justify-self: center;
+                    background: #444;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        align-self: center;
+                    }
+                    .swip-body {
+                        padding-inline: 15px;
+                        justify-content: space-between;
+                        position: absolute;
+                        display: flex;
+                        width: 100%;
+                        color: white;
+                        top: 0;
+                        background-color: rgba(0, 0, 0, 0.463);
+                        justify-self: center;
+                        a {
+                            transition-duration: .6s;
+                            color: white;
+                            text-decoration: none;
+                            &:hover {
+                                color: $main-light;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -97,23 +126,46 @@
                 margin: auto;
                 border-radius: 25px;
                 overflow: hidden;
+                &:hover a {
+                    left: -1%;
+                    transition-duration: 1s;
+                }
                 img {
                     width: 100%;
                 }
                 .card-body {
-                    margin: 10px;
+                    display: flex;
+                    align-self: center;
+                    align-items: center;
+                    padding: 5px;
+                    width: 95%;
+                    color: white;
+                    height: 14%;
                     background-color: $card-light-text;
+                    border: 1px solid black;
                     border-radius: 20px;
                     text-align: center;
-                    a {
-                        background-color: transparent;
-                        transition-duration: .5s;
-                        &:hover {
-                            color: white;
-                        }
-                    }
+                    position: absolute;
+                    top: 100%;
+                    transform: translateY(-120%);
+                    justify-content: space-between;
                     .card-title {
                         text-align: start;
+                        font-size: 13px;
+                    }
+                }
+                a {
+                    position: absolute;
+                    top: 5%;
+                    left: -100%;
+                    text-decoration: none;
+                    color: $font-light;
+                    background-color: $card-light-text;
+                    padding: 3px;
+                    border-radius: 6px;
+                    transition-duration: 1s;
+                    &:hover {
+                        color: white;
                     }
                 }
             }
