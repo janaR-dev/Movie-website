@@ -5,7 +5,7 @@ async function popular_show() {
         let $container = $(`.genre.${name} .items`);
 
         let movie_list = await get_lists(
-            configs.endpoints.discover, { with_genres: `${genres[name].id}` },
+            configs.endpoints.discover, { sort_by: `popularity.desc`, with_genres: `${genres[name].id}` },
             'GET'
         );
 
@@ -109,9 +109,10 @@ async function top_rated_show() {
                         <img src="${posterPath}" alt="">
                         <div class="swip-body">
                             <h3 class="title">${movie.title}</h3>
-                            <h4 class="ratee">${movie.vote_average.toFixed(1)}/10</h4>
-                            <a href="#" class="view" data-id="${movie.id}">View</a>
-                        </div>
+                        </div>                           
+                         <h4 class="ratee">${movie.vote_average.toFixed(1)}/10</h4>
+                        <a href="#" class="view" data-id="${movie.id}">View</a>
+
                     </div>`;
 
         $container.append(swip);

@@ -53,19 +53,29 @@
                         padding-inline: 15px;
                         justify-content: space-between;
                         position: absolute;
-                        display: flex;
                         width: 100%;
                         color: white;
-                        top: 0;
+                        bottom: 0;
                         background-color: rgba(0, 0, 0, 0.463);
-                        justify-self: center;
-                        a {
-                            transition-duration: .6s;
-                            color: white;
-                            text-decoration: none;
-                            &:hover {
-                                color: $main-light;
-                            }
+                        // justify-self: center;
+                        .title {
+                            width: 100%;
+                        }
+                    }
+                    .ratee {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                    a {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transition-duration: .6s;
+                        color: white;
+                        text-decoration: none;
+                        &:hover {
+                            color: $main-light;
                         }
                     }
                 }
