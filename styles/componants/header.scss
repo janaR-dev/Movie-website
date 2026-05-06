@@ -1,5 +1,8 @@
 @use '../abstracts/shares.scss' as *;
 header {
+    .search-result {
+        @include card;
+    }
     .navbar {
         width: 100%;
         padding: 0;

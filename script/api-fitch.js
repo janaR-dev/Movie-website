@@ -16,11 +16,13 @@ const configs = {
         language: 'en-US',
         page: 1,
         include_adult: false,
+        certification_country: "US",
+        "certification.lte": `G`,
         region: 'US'
     },
     headers: {
         accept: 'application/json',
-        Authorization: 'Bearer '
+        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYWQxNzVkYzE5NWEyNDBhMTI4NTUzODlhMTc4YmQyOSIsIm5iZiI6MTc3NzQ4ODcwOC45NTUwMDAyLCJzdWIiOiI2OWYyNTM0NDc2MDc2YzA4MGQ4MjRkNDAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.LRVlq9a5BITXkDPNWu7TXNSDWLwIEs_yKgT9NqR1h2M'
     }
 };
 
@@ -56,15 +58,5 @@ async function get_lists(endpoint, params, method) {
 
 
 
-    // $.ajax({
-    //     // url: 'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1',
-    //     type: 'GET',
-    //     // headers: {
-    //     //     accept: 'application/json',
-    //     //     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYWQxNzVkYzE5NWEyNDBhMTI4NTUzODlhMTc4YmQyOSIsIm5iZiI6MTc3NzQ4ODcwOC45NTUwMDAyLCJzdWIiOiI2OWYyNTM0NDc2MDc2YzA4MGQ4MjRkNDAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.LRVlq9a5BITXkDPNWu7TXNSDWLwIEs_yKgT9NqR1h2M'
-    //     // },
-    //     // success: function(data) {
-    //     //     console.log(data);
-    //     // }
-    // });
+
 }
