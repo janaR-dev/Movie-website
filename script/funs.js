@@ -25,7 +25,7 @@ async function popular_show() {
                             <h6 class="movie-rate">${movie.vote_average.toFixed(1)}/10</h6>
                         </div>
                         <a href="#" class="view" data-id="${movie.id}">View</a>
-                        <a href="#" class="watch-later" data-id="${movie.id}"><i class="fa-regular fa-clock"></i></a>
+                        <a href="#" class="toggle_watchlist " data-id="${movie.id}"><i class="fa-regular fa-clock"></i></a>
 
                     </div>
                 </div>`;
@@ -230,7 +230,7 @@ async function searchin() {
                             <h6 class="movie-rate">${movie.vote_average.toFixed(1)}/10</h6>
                         </div>
                         <a href="#" class="view" data-id="${movie.id}">View</a>
-                        <a href="#" class="watch-later" data-id="${movie.id}"><i class="fa-regular fa-clock"></i></a>
+                        <a href="#" class="watchlist" data-id="${movie.id}"><i class="fa-regular fa-clock"></i></a>
 
                     </div>
                 </div>`;

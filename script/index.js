@@ -1,7 +1,13 @@
 //  let populer_genre = $('#populae .');
 let $filter_inputs = $('#nav-genre input, #nav-Language input, #nav-age input'),
     $search_in = $('.search-in'),
-    $home_btn = $('.nav-link[href="#"]:contains("Home")');;
+    $home_btn = $('.nav-link[href="#"]:contains("Home")');
+
+
+
+
+
+
 
 trending_show();
 top_rated_show();
@@ -67,4 +73,31 @@ $('form[role="search"]').on('submit', function(e) {
 $home_btn.on('click', function(e) {
     e.preventDefault();
     back_home();
+});
+
+$(document).on('click', 'a.toggle_watchlist', async function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const $anchor = $(this);
+    const movieId = $anchor.data('id');
+
+    const isCurrentlyAdded = $anchor.hasClass('active');
+    const wantToAdd = !isCurrentlyAdded;
+
+    const success = await Watchlist(movieId, wantToAdd);
+
+    if (success) {
+        $anchor.toggleClass('active');
+
+        $anchor.attr('title', wantToAdd ? 'Remove from Watchlist' : 'Add to Watchlist');
+
+
+        console.log(`Movie ${wantToAdd ? 'added' : 'removed'}. Anchor is now ${wantToAdd ? 'active' : 'normal'}.`);
+        if ($('.watchlist .movies').length) {
+            display_watchlist();
+        }
+    } else {
+        console.error("API failed to update watchlist.");
+    }
 });
