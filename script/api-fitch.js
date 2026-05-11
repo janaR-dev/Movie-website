@@ -140,82 +140,82 @@ async function Watchlist(movie_id, addToWatchlist) {
     }
 }
 
-async function getWatchlist() {
+// async function getWatchlist() {
 
-    const endpoint = configs.endpoints.watchlist(configs.accountId);
-    const params = {
-        session_id: configs.session_id,
-        language: 'en-US',
-        page: 1,
-        sort_by: 'created_at.asc'
-    };
+//     const endpoint = configs.endpoints.watchlist(configs.accountId);
+//     const params = {
+//         session_id: configs.session_id,
+//         language: 'en-US',
+//         page: 1,
+//         sort_by: 'created_at.asc'
+//     };
 
-    const final_url = build_url(endpoint, params);
+//     const final_url = build_url(endpoint, params);
 
-    try {
-        const response = await $.ajax({
-            url: final_url,
-            method: 'GET',
-            headers: configs.headers
-        });
+//     try {
+//         const response = await $.ajax({
+//             url: final_url,
+//             method: 'GET',
+//             headers: configs.headers
+//         });
 
-        return response.results || [];
-    } catch (err) {
-        console.error("Error fetching watchlist:", err);
-        return [];
-    }
-}
+//         return response.results || [];
+//     } catch (err) {
+//         console.error("Error fetching watchlist:", err);
+//         return [];
+//     }
+// }
 
-async function isInWatchlist(movie_id) {
-    const endpoint = configs.endpoints.accountStates(movie_id);
-    const final_url = build_url(endpoint, {});
+// async function isInWatchlist(movie_id) {
+//     const endpoint = configs.endpoints.accountStates(movie_id);
+//     const final_url = build_url(endpoint, {});
 
-    try {
-        const response = await $.ajax({
-            url: final_url,
-            method: 'GET',
-            headers: configs.headers
-        });
+//     try {
+//         const response = await $.ajax({
+//             url: final_url,
+//             method: 'GET',
+//             headers: configs.headers
+//         });
 
-        return response.watchlist;
-    } catch (err) {
-        console.error("Error checking watchlist status:", err);
-        return false;
-    }
-}
+//         return response.watchlist;
+//     } catch (err) {
+//         console.error("Error checking watchlist status:", err);
+//         return false;
+//     }
+// }
 
-async function display_watchlist() {
-    let $container = $('.watchlist .movies');
+// async function display_watchlist() {
+//     let $container = $('.watchlist .movies');
 
-    $container.html('<div class="loading">Loading watchlist...</div>');
-    let watchlist = await getWatchlist();
+//     $container.html('<div class="loading">Loading watchlist...</div>');
+//     let watchlist = await getWatchlist();
 
-    if (watchlist.length === 0) {
-        $container.append('<div class="empty-watchlist">Your watchlist is empty</div>');
-        return;
-    }
+//     if (watchlist.length === 0) {
+//         $container.append('<div class="empty-watchlist">Your watchlist is empty</div>');
+//         return;
+//     }
 
-    $container.empty();
-    $.each(watchlist, function(key, movie) {
-        let posterPath = movie.poster_path ?
-            configs.imgBase + 'w500' + movie.poster_path :
-            configs.imgBase + 'w1280' + movie.backdrop_path;
+//     $container.empty();
+//     $.each(watchlist, function(key, movie) {
+//         let posterPath = movie.poster_path ?
+//             configs.imgBase + 'w500' + movie.poster_path :
+//             configs.imgBase + 'w1280' + movie.backdrop_path;
 
 
-        let card = `
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                        <div class="card h-100">
-                            <img src="${posterPath}" class="card-img-top" alt="${movie.title}">
-                            <div class="card-body">
-                                <h5 class="card-title">${movie.title.length > 20 ? movie.title.slice(0, 18) + '...' : movie.title}</h5>
-                            <h6 class="movie-rate">${movie.vote_average.toFixed(1)}/10</h6>
-                        </div>
-                        <a href="#" class="view" data-id="${movie.id}">View</a>
-                        <a href="#" class="watchlist active" data-id="${movie.id}" title="Remove from Watchlist">
-                    <i class="fa-regular fa-clock"></i>
-                        </a>
-                    </div>
-                </div>`;
-        $container.append(card);
-    });
-}
+//         let card = `
+//                     <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+//                         <div class="card h-100">
+//                             <img src="${posterPath}" class="card-img-top" alt="${movie.title}">
+//                             <div class="card-body">
+//                                 <h5 class="card-title">${movie.title.length > 20 ? movie.title.slice(0, 18) + '...' : movie.title}</h5>
+//                             <h6 class="movie-rate">${movie.vote_average.toFixed(1)}/10</h6>
+//                         </div>
+//                         <a href="#" class="view" data-id="${movie.id}">View</a>
+//                         <a href="#" class="watchlist active" data-id="${movie.id}" title="Remove from Watchlist">
+//                     <i class="fa-regular fa-clock"></i>
+//                         </a>
+//                     </div>
+//                 </div>`;
+//         $container.append(card);
+//     });
+// }

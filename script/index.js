@@ -74,30 +74,47 @@ $home_btn.on('click', function(e) {
     e.preventDefault();
     back_home();
 });
+$('i.close_popup').on('click', function() {
 
-$(document).on('click', 'a.toggle_watchlist', async function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-
-    const $anchor = $(this);
-    const movieId = $anchor.data('id');
-
-    const isCurrentlyAdded = $anchor.hasClass('active');
-    const wantToAdd = !isCurrentlyAdded;
-
-    const success = await Watchlist(movieId, wantToAdd);
-
-    if (success) {
-        $anchor.toggleClass('active');
-
-        $anchor.attr('title', wantToAdd ? 'Remove from Watchlist' : 'Add to Watchlist');
+    $(this).parent().parent().toggleClass('active');
 
 
-        console.log(`Movie ${wantToAdd ? 'added' : 'removed'}. Anchor is now ${wantToAdd ? 'active' : 'normal'}.`);
-        if ($('.watchlist .movies').length) {
-            display_watchlist();
-        }
-    } else {
-        console.error("API failed to update watchlist.");
-    }
+
 });
+$('.nav-link.popup').on('click', function(e) {
+    e.preventDefault();
+
+    let popup = $(this).attr('href');
+
+    $(`${popup}`).toggleClass('active');
+
+
+});
+
+
+// $(document).on('click', 'a.toggle_watchlist', async function(e) {
+//     e.preventDefault();
+//     e.stopPropagation();
+
+//     const $anchor = $(this);
+//     const movieId = $anchor.data('id');
+
+//     const isCurrentlyAdded = $anchor.hasClass('active');
+//     const wantToAdd = !isCurrentlyAdded;
+
+//     const success = await Watchlist(movieId, wantToAdd);
+
+//     if (success) {
+//         $anchor.toggleClass('active');
+
+//         $anchor.attr('title', wantToAdd ? 'Remove from Watchlist' : 'Add to Watchlist');
+
+
+//         console.log(`Movie ${wantToAdd ? 'added' : 'removed'}. Anchor is now ${wantToAdd ? 'active' : 'normal'}.`);
+//         if ($('.watchlist .movies').length) {
+//             display_watchlist();
+//         }
+//     } else {
+//         console.error("API failed to update watchlist.");
+//     }
+// });
