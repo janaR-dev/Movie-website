@@ -1,5 +1,7 @@
 // @use './fonts.scss' as *;
 @use './colors.scss'as *;
+@use 'responsive.scss'as *;
+
 @mixin flex_box($jc: center, $ai: center, $fd: row) {
     display: flex;
     justify-content: $jc;
@@ -21,6 +23,11 @@
 @mixin card() {
     .card {
         width: 200px;
+         @include mobile {
+        width: 150px;
+
+        };
+
         background-color: $card-light;
         margin: auto;
         border-radius: 25px;
@@ -51,6 +58,12 @@
             .card-title {
                 text-align: start;
                 font-size: 13px;
+                 @include mobile {
+                font-size: 10px;
+
+                    };
+                
+
             }
         }
         a {

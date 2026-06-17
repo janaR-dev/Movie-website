@@ -17,7 +17,7 @@ async function popular_show() {
                 configs.imgBase + 'w500' + movie.backdrop_path;
 
             let card = `
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="col-lg-3 col-md-6 col-6 mb-4">
                     <div class="card h-100" title="${movie.title}">
                         <img src="${posterPath}" class="card-img-top" alt="${movie.title}">
                         <div class="card-body">
@@ -180,7 +180,7 @@ async function filter() {
             configs.imgBase + 'w1280' + movie.backdrop_path;
 
         let card = `
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                <div class="col-lg-3 col-md-6 col-6 mb-4">
                     <div class="card h-100" title="${movie.title}">
                         <img src="${posterPath}" class="card-img-top" alt="${movie.title}">
                         <div class="card-body">
@@ -227,7 +227,7 @@ async function searchin() {
 
 
             let card = `
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="col-lg-3 col-md-6 col-6 mb-4">
                         <div class="card h-100" title="${movie.title}">
                             <img src="${posterPath}" class="card-img-top" alt="${movie.title}">
                             <div class="card-body">
@@ -374,7 +374,7 @@ async function add_ToList(movie_id, $container) {
         configs.imgBase + 'w1280' + movie.backdrop_path;
 
     let card = `
-        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+        <div class="col-lg-3 col-md-6 col-6 mb-4">
             <div class="card h-100">
                 <img src="${posterPath}" class="card-img-top" alt="${movie.title}">
                 <div class="card-body">
