@@ -216,6 +216,10 @@
         border-radius: 30px;
         border: 1px solid rgba(186, 55, 212, 0.5);
         @include card;
+         @include mobile{
+         width: 96%;
+
+         };
 
     }
 

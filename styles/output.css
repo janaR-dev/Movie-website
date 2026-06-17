@@ -12957,6 +12957,12 @@ header .swiper .swiper-slide .swipe-body a:hover {
 .favourits .container .card .toggle_fav {
   top: 35%;
 }
+@media (max-width: 576px) {
+  .watchlist .container,
+  .favourits .container {
+    width: 96%;
+  }
+}
 .watchlist.active,
 .favourits.active {
   opacity: 1;
