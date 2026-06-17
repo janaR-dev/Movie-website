@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies Box</title>
     <link rel="stylesheet" href="styles/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="images/main/cats-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -20,18 +27,22 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container m-auto">
                 <a class="navbar-brand" href="#">
-                    <img src="images/main/cat-logo-light.png" alt="" class="img-fluid">
+                    <img src="images/main/cat-logo-light.png" alt="" class="img-fluid light-logo">
+                    <img src="images/main/cat-logo-dark.png" alt="" class="img-fluid dark-logo">
+
                     <p>CatFlix</p>
                 </a>
                 <form class="d-flex m-auto align-items-center" role="search">
                     <input class="form-control me-2 search-in" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn" type="submit">Search</button>
                 </form>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse flex-grow-0 navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav ms-lg-auto  nav-underline my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <ul class="navbar-nav ms-lg-auto  nav-underline my-2 my-lg-0 navbar-nav-scroll"
+                        style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -43,7 +54,7 @@
 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link popup" href="#login"><span>Register</span></a>
+                            <a class="nav-link popup login_popup" href="#login"><span>Register</span></a>
 
                         </li>
 
@@ -54,10 +65,10 @@
                             <div class="themes">
                                 <input type="checkbox" class="toggle" id="mode">
                                 <label for="mode" class="label">
-                        <div class="slider"></div>
-                        <img src="images/main/cat-up.png" alt="" class="img-fluid cat-up">
-                        <img src="images/main/cat-sleep.png" alt="" class="img-fluid cat-sleep">
-                </label>
+                                    <div class="slider"></div>
+                                    <img src="images/main/cat-up.png" alt="" class="img-fluid cat-up">
+                                    <img src="images/main/cat-sleep.png" alt="" class="img-fluid cat-sleep">
+                                </label>
 
                             </div>
                         </a>
@@ -71,6 +82,8 @@
             <div class="title text-center m-auto my-3">
                 <h2>Trending</h2>
                 <img src="images/main/title-light.png" class="title-img">
+                <img src="images/main/title-dark.png" class="dark title-img">
+
 
             </div>
             <div class="swiper mySwiper">
@@ -89,6 +102,8 @@
         <div class="title text-center m-auto my-3">
             <h2>Recomendations</h2>
             <img src="images/main/title-light.png" class="title-img">
+            <img src="images/main/title-dark.png" class="dark title-img">
+
         </div>
         <div class="container mb-2">
             <div class="swiper mySwiper1">
@@ -112,6 +127,8 @@
         <div class="title text-center m-auto my-3">
             <h2>Top Rated</h2>
             <img src="images/main/title-light.png" class="title-img">
+            <img src="images/main/title-dark.png" class="dark title-img">
+
         </div>
         <div class="container mb-1">
             <div class="swiper mySwiper2">
@@ -125,19 +142,25 @@
         <div class="title text-center m-auto my-3">
             <h2>Popular</h2>
             <img src="images/main/title-light.png" class="title-img">
+            <img src="images/main/title-dark.png" class="dark title-img">
+
         </div>
         <div class="filter container">
             <h4>Filter <a href="#"><i class="fa-solid fa-filter"></i></a>
             </h4>
             <nav class="filter-categories">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-genre-tab" data-bs-toggle="tab" data-bs-target="#nav-genre" type="button" role="tab" aria-controls="nav-genre" aria-selected="true">genre</button>
-                    <button class="nav-link" id="nav-Language-tab" data-bs-toggle="tab" data-bs-target="#nav-Language" type="button" role="tab" aria-controls="nav-Language" aria-selected="false">Language</button>
-                    <button class="nav-link" id="nav-age-tab" data-bs-toggle="tab" data-bs-target="#nav-age" type="button" role="tab" aria-controls="nav-age" aria-selected="false">Age Category</button>
+                    <button class="nav-link active" id="nav-genre-tab" data-bs-toggle="tab" data-bs-target="#nav-genre"
+                        type="button" role="tab" aria-controls="nav-genre" aria-selected="true">genre</button>
+                    <button class="nav-link" id="nav-Language-tab" data-bs-toggle="tab" data-bs-target="#nav-Language"
+                        type="button" role="tab" aria-controls="nav-Language" aria-selected="false">Language</button>
+                    <button class="nav-link" id="nav-age-tab" data-bs-toggle="tab" data-bs-target="#nav-age"
+                        type="button" role="tab" aria-controls="nav-age" aria-selected="false">Age Category</button>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-genre" role="tabpanel" aria-labelledby="nav-genre-tab" tabindex="0">
+                <div class="tab-pane fade show active" id="nav-genre" role="tabpanel" aria-labelledby="nav-genre-tab"
+                    tabindex="0">
                     <input type="checkbox" name="Action" id="Action">
                     <label for="Action">Action</label>
                     <input type="checkbox" name="Animation" id="Animation">
@@ -164,7 +187,8 @@
                     <label for="Western">Western</label>
 
                 </div>
-                <div class="tab-pane fade" id="nav-Language" role="tabpanel" aria-labelledby="nav-Language-tab" tabindex="1">
+                <div class="tab-pane fade" id="nav-Language" role="tabpanel" aria-labelledby="nav-Language-tab"
+                    tabindex="1">
                     <input type="checkbox" name="en" id="en">
                     <label for="en">English</label>
                     <input type="checkbox" name="arab" id="ar">
@@ -197,9 +221,11 @@
 
                 <div class="genre-title my-4">
                     <div class="inner">
-                        <lord-icon class="paw-icon light" src="https://cdn.lordicon.com/kdcogpuc.json" trigger="hover" stroke="bold" colors="primary:#ee66aa,secondary:#e8308c">
+                        <lord-icon class="paw-icon light" src="https://cdn.lordicon.com/kdcogpuc.json" trigger="hover"
+                            stroke="bold" colors="primary:#ee66aa,secondary:#e8308c">
                         </lord-icon>
-                        <lord-icon class=" paw-icon dark d-none" src="https://cdn.lordicon.com/inoabgrx.json" trigger="hover" colors="primary:#4030e8,secondary:#4f1091">
+                        <lord-icon class=" paw-icon dark d-none" src="https://cdn.lordicon.com/inoabgrx.json"
+                            trigger="hover" colors="primary:#4030e8,secondary:#4f1091">
                         </lord-icon>
                         <h3>Action</h3>
 
@@ -218,15 +244,15 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="images/main/download (6).jpg " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
-                <a href="# " class="btn ">View</a>
+            <img src=" images/main/download (6).jpg " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -237,16 +263,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -257,16 +283,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -277,16 +303,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -297,16 +323,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -317,31 +343,33 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
 </div>
 </div>
-<div class="genre Animation ">
-<div class="genre-title my-4 ">
-    <div class="inner ">
-        <lord-icon class="paw-icon light " src="https://cdn.lordicon.com/kdcogpuc.json " trigger="hover " stroke="bold " colors="primary:#ee66aa,secondary:#e8308c ">
+<div class=" genre Animation ">
+<div class=" genre-title my-4 ">
+    <div class=" inner ">
+        <lord-icon class=" paw-icon light " src=" https://cdn.lordicon.com/kdcogpuc.json " trigger=" hover " stroke="
+                            bold " colors=" primary:#ee66aa,secondary:#e8308c ">
         </lord-icon>
-        <lord-icon class=" paw-icon dark d-none " src="https://cdn.lordicon.com/inoabgrx.json " trigger="hover " colors="primary:#4030e8,secondary:#4f1091 ">
+        <lord-icon class=" paw-icon dark d-none " src=" https://cdn.lordicon.com/inoabgrx.json " trigger="
+                            hover " colors=" primary:#4030e8,secondary:#4f1091 ">
         </lord-icon>
         <h3>Animation</h3>
 
     </div>
 </div>
 
-<div class="items row m-auto ">
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+<div class=" items row m-auto ">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -352,16 +380,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -372,16 +400,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -392,16 +420,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -412,16 +440,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -432,16 +460,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -452,31 +480,33 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
 </div>
 </div>
-<div class="genre Comdey ">
-<div class="genre-title my-4 ">
-    <div class="inner ">
-        <lord-icon class="paw-icon light " src="https://cdn.lordicon.com/kdcogpuc.json " trigger="hover " stroke="bold " colors="primary:#ee66aa,secondary:#e8308c ">
+<div class=" genre Comdey ">
+<div class=" genre-title my-4 ">
+    <div class=" inner ">
+        <lord-icon class=" paw-icon light " src=" https://cdn.lordicon.com/kdcogpuc.json " trigger=" hover " stroke="
+                            bold " colors=" primary:#ee66aa,secondary:#e8308c ">
         </lord-icon>
-        <lord-icon class=" paw-icon dark d-none " src="https://cdn.lordicon.com/inoabgrx.json " trigger="hover " colors="primary:#4030e8,secondary:#4f1091 ">
+        <lord-icon class=" paw-icon dark d-none " src=" https://cdn.lordicon.com/inoabgrx.json " trigger="
+                            hover " colors=" primary:#4030e8,secondary:#4f1091 ">
         </lord-icon>
         <h3>Comedy</h3>
 
     </div>
 </div>
 
-<div class="items row m-auto ">
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+<div class=" items row m-auto ">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -487,16 +517,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -507,16 +537,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -527,16 +557,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -547,16 +577,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -567,16 +597,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -587,31 +617,33 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
 </div>
 </div>
-<div class="genre Family ">
-<div class="genre-title my-4 ">
-    <div class="inner ">
-        <lord-icon class="paw-icon light " src="https://cdn.lordicon.com/kdcogpuc.json " trigger="hover " stroke="bold " colors="primary:#ee66aa,secondary:#e8308c ">
+<div class=" genre Family ">
+<div class=" genre-title my-4 ">
+    <div class=" inner ">
+        <lord-icon class=" paw-icon light " src=" https://cdn.lordicon.com/kdcogpuc.json " trigger=" hover " stroke="
+                            bold " colors=" primary:#ee66aa,secondary:#e8308c ">
         </lord-icon>
-        <lord-icon class=" paw-icon dark d-none " src="https://cdn.lordicon.com/inoabgrx.json " trigger="hover " colors="primary:#4030e8,secondary:#4f1091 ">
+        <lord-icon class=" paw-icon dark d-none " src=" https://cdn.lordicon.com/inoabgrx.json " trigger="
+                            hover " colors=" primary:#4030e8,secondary:#4f1091 ">
         </lord-icon>
         <h3>Family</h3>
 
     </div>
 </div>
 
-<div class="items row m-auto ">
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+<div class=" items row m-auto ">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -622,16 +654,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -642,16 +674,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -662,16 +694,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -682,16 +714,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -702,16 +734,16 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-        <div class="card "">
+    <div class=" col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
+        <div class=" card "">
                             <img src="..." class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -722,11 +754,11 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2">
                         <div class="card" ">
-            <img src="... " class="card-img-top " alt="... ">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
+            <img src=" ... " class=" card-img-top " alt=" ... ">
+            <div class=" card-body ">
+                <h5 class=" card-title ">Card title</h5>
 
-                <a href="# " class="btn ">View</a>
+                <a href=" # " class=" btn ">View</a>
             </div>
         </div>
     </div>
@@ -735,99 +767,310 @@
 
         </div>
     </section>
-    <section id="login " class="login-popup ">
-        <div class="container ">
-            <i class="fa-solid fa-x close_popup "></i>
-            <div class="box ">
-                <div class="head ">
+    <section id="login" class="login-popup">
+    <div class="container">
+        <i class="fa-solid fa-x close_popup"></i>
+        <div class="box">
+            <div class="head">
                 <h3>Sign Up</h3>
-                <img src="images/main/login-cat.png " alt=" ">
+                <img src="images/main/login-cat.png" alt="">
+            </div>
+            <form action="" class="data">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">
+                        <i class="fa-solid fa-image"></i>
+                    </span>
+                    <input type="file" class="form-control" id="profilePic" accept="image/*">
                 </div>
-                <form action=" " class="data ">
-                <div class="input-group mb-3 ">
-                <span class="input-group-text "><i class="fa-solid fa-user "></i></span>
-                <input type="text " class="form-control input " name="firstName " placeholder="First Name * " required=" " autocomplete="off ">
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control input" name="firstName"
+                        placeholder="First Name * " required autocomplete="off">
                 </div>
-                <p class="alert alert-danger w-100 m-0 mt-2 mb-3 d-none " data-error-name="firstName "></p>
-                <div class="input-group mb-3 ">
-                <span class="input-group-text "><i class="fa-solid fa-user "></i></span>
-                <input type="text " class="form-control input " name="lastName " placeholder="Last Name * " required=" " autocomplete="off ">
+                <p class="alert alert-danger w-100 m-0 mt-2 mb-3 d-none"
+                    data-error-name="firstName"></p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control input" name="lastName"
+                        placeholder="Last Name * " required autocomplete="off">
                 </div>
-                <p class="alert alert-danger w-100 m-0 mt-2 mb-3 d-none " data-error-name="lastName "></p>
-                <div class="input-group mb-3 ">
-                <span class="input-group-text "><i class="fa-solid fa-envelope "></i></span>
-                <input type="text " class="form-control input " name="email " placeholder="Email * " required=" " autocomplete="off ">
+                <p class="alert alert-danger w-100 m-0 mt-2 mb-3 d-none"
+                    data-error-name="lastName"></p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="text" class="form-control input" name="email"
+                        placeholder="Email * " required autocomplete="off">
                 </div>
-                <p class="alert alert-danger w-100 m-0 mt-2 mb-3 d-none " data-error-name="email "></p>
-                </form> <button class="sign-up " onclick="submitForm(); "><span>sign-up</span></button>
-                <div class="user-display ">
-                <div class="user-info ">
-
+                <p class="alert alert-danger w-100 m-0 mt-2 mb-3 d-none"
+                    data-error-name="email"></p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="fa-solid fa-eye"></i></span>
+                    <input type="password" class="form-control input" name="password"
+                        placeholder="Password * " required autocomplete="off">
                 </div>
-                </div>
+                <p class="alert alert-danger w-100 m-0 mt-2 mb-3 d-none"
+                    data-error-name="password"></p>
+            </form>
+            <button class="sign-up" onclick="submitForm();"><span>sign-up</span></button>
+            <div class="user-display">
+                <div class="user-info"></div>
             </div>
         </div>
+    </div>
     </section>
-    <section id="watchlist " class="watchlist ">
+    <section id="watchlist" class="watchlist ">
         <div class="container ">
             <i class="fa-solid fa-x close_popup "></i>
-            <div class="head text-center ">
+            <div class="head-list text-center ">
                 <h3>Watchlist</h3>
             </div>
-            <div class="row m-auto movies ">
-                <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-                    <div class="card ">
-                        <img src="... " class="card-img-top " alt="... ">
-                        <div class="card-body ">
-                            <h5 class="card-title ">Card title</h5>
-
-                            <a href="# " class="btn ">View</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="movie_list row m-auto">
             </div>
+            <div class="empty-list">
+                <p>Your watchlist is empty.</p>
+            </div>
+
 
         </div>
     </section>
-    <section id="favorites " class="favourits " >
+    <section id="favorites" class="favourits">
         <div class="container ">
             <i class="fa-solid fa-x close_popup "></i>
-            <div class="head text-center ">
+            <div class="head-list text-center ">
                 <h3>favorites</h3>
             </div>
-            <div class="row m-auto movies ">
-                <div class="col-lg-3 col-md-6 col-sm-12 m-auto mb-2 ">
-                    <div class="card ">
-                        <img src="... " class="card-img-top " alt="... ">
-                        <div class="card-body ">
-                            <h5 class="card-title ">Card title</h5>
-
-                            <a href="# " class="btn ">View</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="row m-auto movie_list">
+            </div>
+            <div class="empty-list-fav">
+                <p>Your favorites list is empty.</p>
             </div>
 
         </div>
 
     </section>
+    <div class="view_movie ">
+        <nav><i class="fa-solid fa-angle-left"></i></nav>
+        <div class="movie-container">
+            <div class="details ">
+                <div class="row ">
+                    <div class="col-lg-9 col-md-12 col-sm-12 movie-details">
+                        <div class="movie-info">
+                            <div class="movie-box">
+                                <div class="movie-sum">
+                                    <div class="holder">
 
-<footer>
-<div class="container ">
-<p>Jana Ramadan Salah original work</p>
-</div>
-</footer>
+                                        <div class="poster-box">
+                                            <img src="images/main/download.jpg" alt="" class="poster">
+                                        </div>
+                                        <div class="movie-title">
+                                            <p>title of the movie</p>
+                                        </div>
+                                    </div>
+                                    <div class="video-box">
+                                        <a href="#" class="toggle_watchlist" data-id="${movie.id}"><i
+                                                class="fa-regular fa-clock"></i></a>
+                                        <a href="#" class="toggle_fav" data-id="${movie.id}"><i
+                                                class="fa-regular fa-heart"></i></a>
+
+                                        <div class="icon-vid">
+                                            <i class="fa-brands fa-google-play teaser"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="movie-title">
+                                <h2 class="title-again"></h2>
+                            </div>
+                        </div>
+                        <div class="movie-des">
+                            <div class="boxx">
+                                <h3>Rate <span>10/10</span></h3>
+                                <p><b>Release date:</b> <span class="release-date">3.4.2009</span></p>
+                                <h4 class="overview">Overview:</h4>
+                                <p>this movie is blah blah blah blahblahblahblahblahblahblahblahb
+                                    lahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahbl
+                                    ahblahblahblahblahblah
+                                </p>
+                                <div class="casting">
+
+                                    <h3>Cast:</h3>
+                                    <div class="row cards">
+                                        <div class="actor-card">
+                                            <img src="images/main/cat-sleep.png" alt="" class="actor-profile">
+                                            <h5 class="chaacter-name">Brad bit</h5>
+                                            <h6 class="actor-name">idk bro</h6>
+                                        </div>
+                                        <div class="actor-card">
+                                            <img src="images/main/cat-sleep.png" alt="" class="actor-profile">
+                                            <h5 class="chaacter-name">Brad bit</h5>
+                                            <h6 class="actor-name">idk bro</h6>
+                                        </div>
+                                        <div class="actor-card">
+                                            <img src="images/main/cat-sleep.png" alt="" class="actor-profile">
+                                            <h5 class="chaacter-name">Brad bit</h5>
+                                            <h6 class="actor-name">idk bro</h6>
+                                        </div>
+                                        <div class="actor-card">
+                                            <img src="images/main/cat-sleep.png" alt="" class="actor-profile">
+                                            <h5 class="chaacter-name">Brad bit</h5>
+                                            <h6 class="actor-name">idk bro</h6>
+                                        </div>
+
+                                    </div>
 
 
-<script src="script/jq.js "></script>
-<script src="https://cdn.lordicon.com/lordicon.js "></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js "></script>
-<script src="script/bootstrap.bundle.js "></script>
-<script src="script/plugin.js "></script>
-<script src="script/objects.js "></script>
-<script src="script/api-fitch.js "></script>
-<script src="script/funs.js "></script>
-<script src="script/index.js "></script>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 col-sm-12 my-3 reviews-container">
+                        <div class=" reviews">
+                            <div class="head-title">
+                                <h3>Reviews</h3>
+                            </div>
+                            <div class="reviews-list">
+                                <div class=" review ">
+                                    <div class="review-card ">
+                                        <div class="reviewer-info ">
+                                            <img src="images/main/cat-sleep.png" alt="" class="reviewer-profile">
+                                            <h5 class="reviewer-name">Brad bit</h5>
+                                        </div>
+                                        <p class="review-content ">this movie is blah blah blah
+                                            blahblahblahblahblahblahblahblahb
+                                    </div>
+                                </div>
+                                <div class=" review ">
+                                    <div class="review-card ">
+                                        <div class="reviewer-info ">
+                                            <img src="images/main/cat-sleep.png" alt="" class="reviewer-profile">
+                                            <h5 class="reviewer-name">Brad bit</h5>
+                                        </div>
+                                        <p class="review-content ">this movie is blah blah blah
+                                            blahblahblahblahblahblahblahblahb
+                                    </div>
+                                </div>
+                                <div class=" review ">
+                                    <div class="review-card ">
+                                        <div class="reviewer-info ">
+                                            <img src="images/main/cat-sleep.png" alt="" class="reviewer-profile">
+                                            <h5 class="reviewer-name">Brad bit</h5>
+                                        </div>
+                                        <p class="review-content ">this movie is blah blah blah
+                                            blahblahblahblahblahblahblahblahb
+                                    </div>
+                                </div>
+                                <div class=" review ">
+                                    <div class="review-card ">
+                                        <div class="reviewer-info ">
+                                            <img src="images/main/cat-sleep.png" alt="" class="reviewer-profile">
+                                            <h5 class="reviewer-name">Brad bit</h5>
+                                        </div>
+                                        <p class="review-content ">this movie is blah blah blah
+                                            blahblahblahblahblahblahblahblahb
+                                    </div>
+                                </div>
+                                <div class=" review ">
+                                    <div class="review-card ">
+                                        <div class="reviewer-info ">
+                                            <img src="images/main/cat-sleep.png" alt="" class="reviewer-profile">
+                                            <h5 class="reviewer-name">Brad bit</h5>
+                                        </div>
+                                        <p class="review-content ">this movie is blah blah blah
+                                            blahblahblahblahblahblahblahblahb
+                                    </div>
+                                </div>
+                                <div class=" review ">
+                                    <div class="review-card ">
+                                        <div class="reviewer-info ">
+                                            <img src="images/main/cat-sleep.png" alt="" class="reviewer-profile">
+                                            <h5 class="reviewer-name">Brad bit</h5>
+                                        </div>
+                                        <p class="review-content ">this movie is blah blah blah
+                                            blahblahblahblahblahblahblahblahb
+                                    </div>
+                                </div>
+                                <div class=" review ">
+                                    <div class="review-card ">
+                                        <div class="reviewer-info ">
+                                            <img src="images/main/cat-sleep.png" alt="" class="reviewer-profile">
+                                            <h5 class="reviewer-name">Brad bit</h5>
+                                        </div>
+                                        <p class="review-content ">this movie is blah blah blah
+                                            blahblahblahblahblahblahblahblahb
+                                    </div>
+                                </div>
+                                <div class=" review ">
+                                    <div class="review-card ">
+                                        <div class="reviewer-info ">
+                                            <img src="images/main/cat-sleep.png" alt="" class="reviewer-profile">
+                                            <h5 class="reviewer-name">Brad bit</h5>
+                                        </div>
+                                        <p class="review-content ">this movie is blah blah blah
+                                            blahblahblahblahblahblahblahblahb
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-review">
+                                <textarea class="form-control review-input"></textarea>
+
+                                <button class="btn btn-primary add-review-btn">
+                                    Add Review
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal fade" id="loadingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center py-4">
+                <div class="modal-body">
+                    <div class="spinner-grow text-danger" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <h5 class="modal-title">Loading Details...</h5>
+                    <p class=" mb-0">Please wait while till the page loads.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-popup">
+
+        <div class="video-box">
+
+            <i class="fa-solid fa-xmark close-video"></i>
+
+            <iframe id="movieTrailer" width="100%" height="500" frameborder="0" allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="container ">
+            <p>Jana Ramadan Salah original work</p>
+        </div>
+    </footer>
+
+
+    <script src="script/jq.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js "></script>
+    <script src="script/bootstrap.bundle.js "></script>
+    <script src="script/plugin.js "></script>
+    <script src="script/objects.js "></script>
+    <script src="script/api-fitch.js "></script>
+    <script src="script/funs.js "></script>
+    <script src="script/index.js"></script>
 </body>
 
 </html>

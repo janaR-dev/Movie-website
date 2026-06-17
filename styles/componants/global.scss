@@ -1,5 +1,6 @@
 @use '../abstracts/shares.scss' as *;
 @use '../bootstrap.min.css';
+
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +12,21 @@ html {
 }
 
 body {
-    @include bg-light;
+
+    scrollbar-width: none;
+    transition-duration: .5s;
     position: relative;
     font-family: $main-font;
-    color: $font-light;
+    padding: 0;
+
     p {
         font-family: $messy-font;
     }
+}
+
+body:not(.dark) {
+    @include bg-light;
+    color: $font-light;
 }
 
 .swiper {
@@ -42,8 +51,22 @@ body {
 }
 
 .title {
-    width: 20%;
-    .title-img {
+           width: 20%;
+
+
+    @include laptop {
+        width: 20%;
+    }
+
+    @include mobile {
+         width: 40%;
+    }
+
+    .title-img:not(.dark) {
         width: 100%;
+    }
+
+    .title-img.dark {
+        display: none;
     }
 }

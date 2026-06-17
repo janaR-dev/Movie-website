@@ -1,0 +1,253 @@
+@use '../abstracts/shares.scss' as *;
+
+body.dark{
+  background-color: $main-dark;
+  transition-property: all;
+  transition-duration: .5s;
+    color: $font-dark;
+ 
+   #popular {
+            .filter {
+                color: $main-light;
+                label {
+                    border: 2px solid $font-dark;
+                }
+                input:checked+label {
+                    background-color: #ffffff;
+                }
+                h4 {
+                    a {
+                        position: relative;
+                        i {
+                           
+                            color: $main-dark;
+                           
+                        }
+                    }
+                }
+                .filter-categories {
+                    .nav-tabs {
+                        .nav-link {
+                            color: $main-light;
+                        }
+                    }
+                }
+                .filter-results {
+                    @include card;
+                }
+            }
+            .genre {
+                .items {
+                    @include card;
+                }
+                .genre-title {
+                    
+                    background-color: $nav-dark;
+                    border-radius: 15px;
+                    border: 2px solid;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+
+    .title-img.dark {
+         display: block;
+         width: 100%;}
+     
+    .title-img:not(.dark) {
+        display: none;
+    }
+
+ .login-popup {
+    &::before {
+        background: rgba(0,0,0,.75);
+    }
+
+    .container {
+        background: $nav-dark;
+        border: 1px solid $outline-dark;
+
+        .head {
+            color: $font-dark;
+        }
+
+        i {
+            color: $font-dark;
+        }
+
+        .data {
+            input {
+                background-color: $main-dark;
+                color: $font-dark;
+                border-color: $outline-dark;
+
+                &::placeholder {
+                    color: rgba($font-dark,.7);
+                }
+            }
+        }
+
+        button {
+            border-color: $outline-dark;
+            color: $font-dark;
+        }
+    }
+
+     .user-display {
+
+        .user-info {
+        background: $nav-dark;
+        border-color: $outline-dark;
+        }
+   .profile-card {
+   
+    background: rgb(64, 60, 135);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+     h3 {
+    color: rgba(228, 194, 223, 0.88);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+p{
+    color: aliceblue;
+}
+    }
+     }
+}
+.watchlist,
+.favourits {
+
+    &::before {
+        background-color: rgba(0,0,0,.8);
+    }
+
+    .container {
+        background: $nav-dark;
+        border-color: $outline-dark;
+    }
+}
+
+.watchlist .fa-solid,
+.favourits .fa-solid {
+    color: $font-dark;
+}
+
+.view_movie {
+
+    background-color: $main-dark;
+
+    nav {
+        background-color: $nav-dark;
+        color: $font-dark;
+    }
+
+    .details {
+        background-color: $main-dark;
+    }
+
+    .movie-des {
+
+        &::before {
+            background-color: rgba(24,26,31,.9);
+        }
+    }
+
+    .reviews {
+        background-color: rgba(24,26,31,.9);
+    }
+
+    .add-review {
+
+        textarea {
+            color: $font-dark;
+        }
+
+        .add-review-btn {
+            background-color: $nav-dark;
+            color: $font-dark;
+        }
+    }
+
+    .delete-review {
+        color: $font-dark;
+    }
+}
+
+.video-popup {
+    background: rgba(109, 105, 105, 0.95);
+}
+
+header {
+
+
+
+    .navbar {
+        .navbar-toggler{
+            background-color: $font-dark;
+
+        }
+        .light-logo{
+            display: none;
+
+        }
+        .dark-logo{
+
+                  display: block;  }
+     p {
+    color:rgb(140, 117, 255);
+
+    }
+
+        background-color: $nav-dark;
+        .nav-link{        
+            color: $font-dark;
+
+        }
+        form{
+            .btn{
+            color: $font-dark;
+
+            }
+        }
+    }
+
+
+}
+.nav-item {
+
+    .nav-link {
+
+        .label {
+            background-color: $nav-dark;
+            border-color: $outline-dark;
+        }
+
+       
+    }
+}
+.swiper{
+    .swiper-pagination{
+        .swiper-pagination-bullet{
+    background-color: $main-light;
+    color: $font-light;
+
+}
+    }
+}
+#loadingModal {
+
+    .modal-content {
+        background-color: $nav-dark;
+        color: $font-dark;
+        p{
+    color: white;
+
+    }
+    }
+    
+}
+}

@@ -1,19 +1,33 @@
 //  let populer_genre = $('#populae .');
+
 let $filter_inputs = $('#nav-genre input, #nav-Language input, #nav-age input'),
     $search_in = $('.search-in'),
-    $home_btn = $('.nav-link[href="#"]:contains("Home")');
+    $home_btn = $('.nav-link[href="#"]:contains("Home")'),
+    $list = $(`.movie_list`),
+    $loadingModal_ele = $('#loadingModal'),
+    $loadingModal = new bootstrap.Modal($loadingModal_ele),
+    $activeRequests = 0,
+    $tooltipTriggerList =
+        [].slice.call(
+            $('[title]')
+        );
+
+$tooltipTriggerList.map(el =>
+    new bootstrap.Tooltip(el)
+);
 
 
-
-
-
-
-
+update_theme()
+init_user();
 trending_show();
 top_rated_show();
 popular_show();
+checkFavoritesEmpty();
+checkWatchlistEmpty();
+update_watchlist();
+update_fav();
 
-$filter_inputs.on('change', function() {
+$filter_inputs.on('change', function () {
 
     filter();
 })
@@ -61,27 +75,27 @@ $filter_inputs.on('change', function() {
 
 
 
-$search_in.on("keyup", function() {
+$search_in.on("keyup", function () {
     searchin();
 });
 
-$('form[role="search"]').on('submit', function(e) {
+$('form[role="search"]').on('submit', function (e) {
     e.preventDefault();
     searchin();
 });
 
-$home_btn.on('click', function(e) {
+$home_btn.on('click', function (e) {
     e.preventDefault();
     back_home();
 });
-$('i.close_popup').on('click', function() {
+$('i.close_popup').on('click', function () {
 
     $(this).parent().parent().toggleClass('active');
 
 
 
 });
-$('.nav-link.popup').on('click', function(e) {
+$('.nav-link.popup').on('click', function (e) {
     e.preventDefault();
 
     let popup = $(this).attr('href');
@@ -91,30 +105,135 @@ $('.nav-link.popup').on('click', function(e) {
 
 });
 
+$(document).on('click', '.toggle_watchlist', async function (e) {
+    e.preventDefault();
+    let id = $(this).data('id');
+    toggle_LS(id, 'watchlist');
+    await update_watchlist();
+    checkFavoritesEmpty();
+    checkWatchlistEmpty();
+    update_fav()
+    check_icon(id)
 
-// $(document).on('click', 'a.toggle_watchlist', async function(e) {
-//     e.preventDefault();
-//     e.stopPropagation();
+});
 
-//     const $anchor = $(this);
-//     const movieId = $anchor.data('id');
+$(document).on('click', '.toggle_fav', async function (e) {
+    e.preventDefault();
+    let id = $(this).data('id');
+    toggle_LS(id, 'fav');
+    await update_fav();
+    checkFavoritesEmpty();
+    checkWatchlistEmpty();
+    update_watchlist()
+    check_icon(id)
 
-//     const isCurrentlyAdded = $anchor.hasClass('active');
-//     const wantToAdd = !isCurrentlyAdded;
+});
 
-//     const success = await Watchlist(movieId, wantToAdd);
+$(document).on('click', '.view', async function (e) {
 
-//     if (success) {
-//         $anchor.toggleClass('active');
+    e.preventDefault();
 
-//         $anchor.attr('title', wantToAdd ? 'Remove from Watchlist' : 'Add to Watchlist');
+    let movieId = $(this).data('id');
+
+    $('.view_movie').css('left', '0%');
+
+    await movie_details(movieId);
+});
+
+$(document).on('click', '.view_movie nav .fa-angle-left', function () {
+    $('.view_movie').css('left', '100%');
+});
+$("input", ".login-popup").on("blur change", function () {
+    validateInput($(this));
+});
+
+$(document).on("click", "#logoutBtn", logoutUser);
+$(document).on('click', '.teaser', function () {
+    let currentTheme = localStorage.getItem('theme') || 'light';
 
 
-//         console.log(`Movie ${wantToAdd ? 'added' : 'removed'}. Anchor is now ${wantToAdd ? 'active' : 'normal'}.`);
-//         if ($('.watchlist .movies').length) {
-//             display_watchlist();
-//         }
-//     } else {
-//         console.error("API failed to update watchlist.");
-//     }
-// });
+    let key = $(this).attr('data-key');
+
+    if (!key) {
+
+         Swal.mixin({
+            toast: true,
+            position: "center",
+            showConfirmButton: false,
+            timer: 2000,
+            theme: `${currentTheme}`,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        }).fire({
+            icon: "error",
+            title: "Trailer is not avilable",
+            theme: `${currentTheme}`
+
+        });
+        return;
+    }
+
+    $('#movieTrailer').attr(
+        'src',
+        `https://www.youtube.com/embed/${key}?autoplay=1`
+    );
+
+    $('.video-popup').fadeIn();
+});
+
+$(document).on('click', '.close-video', function () {
+
+    $('.video-popup').fadeOut();
+
+    $('#movieTrailer').attr('src', '');
+
+});
+
+$(document).on(
+    'click',
+    '.add-review-btn',
+    write_review
+);
+
+$(document).on(
+    'click',
+    '.delete-review',
+    function () {
+
+        let movieId =
+            $(this).data('movie-id');
+
+        let reviewId =
+            $(this).data('review-id');
+
+        delete_review(movieId, reviewId);
+
+        load_Reviews(movieId);
+    }
+);
+
+$('#mode').on('change', function () {
+
+    if ($(this).is(':checked')) {
+
+        $('body').addClass('dark');
+
+        localStorage.setItem(
+            'theme',
+            'dark'
+        );
+
+    } else {
+
+        $('body').removeClass('dark');
+
+        localStorage.setItem(
+            'theme',
+            'light'
+        );
+    }
+});
+

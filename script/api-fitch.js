@@ -29,56 +29,6 @@ const configs = {
         Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYWQxNzVkYzE5NWEyNDBhMTI4NTUzODlhMTc4YmQyOSIsIm5iZiI6MTc3NzQ4ODcwOC45NTUwMDAyLCJzdWIiOiI2OWYyNTM0NDc2MDc2YzA4MGQ4MjRkNDAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.LRVlq9a5BITXkDPNWu7TXNSDWLwIEs_yKgT9NqR1h2M'
     }
 };
-// async function getRequestToken() {
-//     try {
-//         const response = await $.ajax({
-//             url: 'https://api.themoviedb.org/3/authentication/token/new',
-//             method: 'GET',
-//             headers: {
-//                 accept: 'application/json',
-//                 Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYWQxNzVkYzE5NWEyNDBhMTI4NTUzODlhMTc4YmQyOSIsIm5iZiI6MTc3NzQ4ODcwOC45NTUwMDAyLCJzdWIiOiI2OWYyNTM0NDc2MDc2YzA4MGQ4MjRkNDAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.LRVlq9a5BITXkDPNWu7TXNSDWLwIEs_yKgT9NqR1h2M'
-//             }
-//         });
-
-//         console.log(response);
-//         return response.request_token;
-
-//     } catch (err) {
-//         console.error(err);
-//     }
-// }
-
-
-// `https://www.themoviedb.org/authenticate/d1c024d22b478c3f3a4a963472ad2d475d53e5bc`
-
-// async function createSession() {
-
-//     try {
-//         const response = await $.ajax({
-//             url: 'https://api.themoviedb.org/3/authentication/session/new',
-//             method: 'POST',
-//             headers: {
-//                 accept: 'application/json',
-//                 'Content-Type': 'application/json',
-//                 Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYWQxNzVkYzE5NWEyNDBhMTI4NTUzODlhMTc4YmQyOSIsIm5iZiI6MTc3NzQ4ODcwOC45NTUwMDAyLCJzdWIiOiI2OWYyNTM0NDc2MDc2YzA4MGQ4MjRkNDAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.LRVlq9a5BITXkDPNWu7TXNSDWLwIEs_yKgT9NqR1h2M'
-//             },
-
-//             data: JSON.stringify({
-//                 request_token: 'd1c024d22b478c3f3a4a963472ad2d475d53e5bc'
-//             })
-//         });
-
-//         console.log(response);
-
-//         return response.session_id;
-
-//     } catch (err) {
-//         console.error(err);
-//     }
-// }
-// const sessionId = createSession();
-
-// console.log(sessionId);
 
 function build_url(endpoint, new_params = {}) {
     let url = new URL(configs.baseUrl + endpoint),
@@ -95,6 +45,11 @@ async function get_lists(endpoint, params, method) {
     // url = `https://api.themoviedb.org/3/trending/movie/day?language=arabic`
     // q, discover, trending, genre/ movie/date,popular,toprated, movieid+recommendation?lang=en&page=1
     let final_url = build_url(endpoint, params);
+   $activeRequests++;
+
+    if($activeRequests === 1){
+       $loadingModal.show();
+ }
 
     try {
         let response = await $.ajax({
@@ -103,17 +58,27 @@ async function get_lists(endpoint, params, method) {
             headers: configs.headers
         });
 
-        return response.results;
+        return response.results? response.results : response;
 
     } catch (err) {
         console.error("Fetch error:", err);
 
-    }
+    }finally {
+
+        $activeRequests--;
+
+        if($activeRequests === 0){
+
+            setTimeout(() => {
+                $loadingModal.hide();
+            }, 500);}
+
+}
 
 }
 
 
-async function Watchlist(movie_id, addToWatchlist) {
+async function get_movie(movie_id) {
 
     const endpoint = configs.endpoints.watchlist(configs.accountId);
     const final_url = build_url(endpoint, { session_id: configs.session_id });
@@ -219,3 +184,55 @@ async function Watchlist(movie_id, addToWatchlist) {
 //         $container.append(card);
 //     });
 // }
+
+// async function getRequestToken() {
+//     try {
+//         const response = await $.ajax({
+//             url: 'https://api.themoviedb.org/3/authentication/token/new',
+//             method: 'GET',
+//             headers: {
+//                 accept: 'application/json',
+//                 Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYWQxNzVkYzE5NWEyNDBhMTI4NTUzODlhMTc4YmQyOSIsIm5iZiI6MTc3NzQ4ODcwOC45NTUwMDAyLCJzdWIiOiI2OWYyNTM0NDc2MDc2YzA4MGQ4MjRkNDAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.LRVlq9a5BITXkDPNWu7TXNSDWLwIEs_yKgT9NqR1h2M'
+//             }
+//         });
+
+//         console.log(response);
+//         return response.request_token;
+
+//     } catch (err) {
+//         console.error(err);
+//     }
+// }
+
+
+// `https://www.themoviedb.org/authenticate/d1c024d22b478c3f3a4a963472ad2d475d53e5bc`
+
+// async function createSession() {
+
+//     try {
+//         const response = await $.ajax({
+//             url: 'https://api.themoviedb.org/3/authentication/session/new',
+//             method: 'POST',
+//             headers: {
+//                 accept: 'application/json',
+//                 'Content-Type': 'application/json',
+//                 Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYWQxNzVkYzE5NWEyNDBhMTI4NTUzODlhMTc4YmQyOSIsIm5iZiI6MTc3NzQ4ODcwOC45NTUwMDAyLCJzdWIiOiI2OWYyNTM0NDc2MDc2YzA4MGQ4MjRkNDAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.LRVlq9a5BITXkDPNWu7TXNSDWLwIEs_yKgT9NqR1h2M'
+//             },
+
+//             data: JSON.stringify({
+//                 request_token: 'd1c024d22b478c3f3a4a963472ad2d475d53e5bc'
+//             })
+//         });
+
+//         console.log(response);
+
+//         return response.session_id;
+
+//     } catch (err) {
+//         console.error(err);
+//     }
+// }
+// const sessionId = createSession();
+
+// console.log(sessionId);)
+
