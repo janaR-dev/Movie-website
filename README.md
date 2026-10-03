@@ -1,5 +1,5 @@
 # Movie-website
-# 🎬 CatFlix — TMDB Movie Application
+# 🎬 CatFlix — TMDB Movie Web Application
 
 A frontend movie-discovery application built with **HTML, CSS/SCSS, JavaScript, jQuery, Bootstrap, Swiper.js, SweetAlert2, and The Movie Database (TMDB) API**.
 
