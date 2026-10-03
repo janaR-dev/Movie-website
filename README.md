@@ -162,7 +162,7 @@ In this project, `get_lists()` is the main reusable API request layer.
 
 ---
 
-# 🌐 How TMDB API Works
+#  How TMDB API Works
 
 The application communicates with TMDB using HTTP requests.
 
@@ -310,7 +310,7 @@ This gives you a central place to change the API configuration.
 
 ---
 
-# 🧱 Understanding the Nested Objects
+#  Understanding the Nested Objects
 
 The `configs` object contains several smaller objects.
 
@@ -429,7 +429,7 @@ you define them once.
 
 ---
 
-# 🔗 Building API URLs
+#  Building API URLs
 
 The project uses:
 
@@ -557,7 +557,7 @@ This is much safer and cleaner than manually concatenating:
 
 ---
 
-# 🚀 The Main API Request Function
+#  The Main API Request Function
 
 The main reusable function is:
 
@@ -612,7 +612,7 @@ get_lists(...)
 
 ---
 
-# 🔄 API Request Flow
+#  API Request Flow
 
 For example:
 
@@ -658,7 +658,7 @@ This is one of the most important concepts to understand when building API-drive
 
 ---
 
-# 📦 Why `response.results ? response.results : response`?
+#  Why `response.results ? response.results : response`?
 
 List endpoints generally return:
 
@@ -723,7 +723,7 @@ has no `results`, so the complete response is returned.
 
 ---
 
-# 🎞 Understanding TMDB Movie Objects
+#  Understanding TMDB Movie Objects
 
 A movie returned by TMDB is an object.
 
@@ -765,7 +765,7 @@ This is a fundamental JavaScript concept:
 
 ---
 
-# 🖼 Working With Movie Images
+#  Working With Movie Images
 
 TMDB gives image paths rather than complete URLs.
 
@@ -803,7 +803,7 @@ This pattern appears throughout the application.
 
 ---
 
-# 🎭 Genres Object
+#  Genres Object
 
 The application defines a local genre mapping:
 
@@ -990,7 +990,7 @@ This is important because the UI later needs to know which movie the user clicke
 
 ---
 
-# 🏆 Top Rated Movies
+#  Top Rated Movies
 
 `top_rated_show()` follows almost the same pattern.
 
@@ -1098,7 +1098,7 @@ with_genres=28,16
 
 ---
 
-# 🌍 Filtering by Language
+#  Filtering by Language
 
 The language input IDs correspond to TMDB language codes.
 
@@ -1130,7 +1130,7 @@ is sent to TMDB.
 
 ---
 
-# 🔞 Certification Filtering
+#  Certification Filtering
 
 The age filter reads:
 
@@ -1156,7 +1156,7 @@ when no certification value has been selected.
 
 ---
 
-# 🔍 Movie Search
+#  Movie Search
 
 The search function:
 
@@ -1203,7 +1203,7 @@ The UI then hides the normal sections and displays the search-result container.
 
 ---
 
-# 🏠 Returning Home
+# Returning Home
 
 The:
 
@@ -1308,7 +1308,7 @@ This gives the application a richer movie object.
 
 ---
 
-# 🧠 The Expanded Movie Object
+#  The Expanded Movie Object
 
 After:
 
@@ -1415,7 +1415,7 @@ is used as a fallback.
 
 ---
 
-# ⭐ Reviews
+#  Reviews
 
 There are two review sources in the project.
 
@@ -1599,7 +1599,7 @@ This means the UI only presents the delete action for the currently stored user'
 
 ---
 
-# 🎞 Trailers
+#  Trailers
 
 The function:
 
@@ -1639,7 +1639,7 @@ https://www.youtube.com/embed/{key}?autoplay=1
 
 ---
 
-# ❤️ Favorites and ⏰ Watchlist
+#  Favorites and Watchlist
 
 These are handled client-side using `localStorage`.
 
@@ -1670,7 +1670,7 @@ This is a good design decision for a small frontend project because movie detail
 
 ---
 
-# 🔄 `toggle_LS()`
+#  `toggle_LS()`
 
 The function:
 
@@ -1860,7 +1860,7 @@ This avoids duplicating the movie-card creation logic.
 
 ---
 
-# ♻️ Reusable `add_ToList()`
+# Reusable `add_ToList()`
 
 This function is a good example of reuse:
 
@@ -1895,7 +1895,7 @@ Then a standard movie card is generated.
 
 ---
 
-# 🧩 Event Delegation
+# Event Delegation
 
 The application frequently creates HTML dynamically.
 
@@ -1950,7 +1950,7 @@ This is an important technique when working with dynamically generated DOM eleme
 
 ---
 
-# 🖱 Main UI Event Flow
+# Main UI Event Flow
 
 A movie card contains:
 
@@ -2116,7 +2116,7 @@ whole form validation
 
 ---
 
-# 💾 Saving User Data
+#  Saving User Data
 
 `saveUser(user)` converts the object into JSON:
 
@@ -2193,7 +2193,7 @@ Then it resets the UI and shows the registration form again.
 
 ---
 
-# 🌙 Theme System
+# Theme System
 
 The application stores:
 
@@ -2286,7 +2286,7 @@ because multiple asynchronous requests can happen at the same time.
 
 ---
 
-# 📚 Function Reference
+# Function Reference
 
 ## API / Networking
 
@@ -2372,7 +2372,7 @@ because multiple asynchronous requests can happen at the same time.
 
 ---
 
-# 🔁 Complete Application Data Flow
+#  Complete Application Data Flow
 
 A simplified version of the whole application is:
 
@@ -2438,7 +2438,7 @@ Update details page
 
 ---
 
-# 🧠 The Most Important Programming Ideas Demonstrated
+#  The Most Important Programming Ideas Demonstrated
 
 This project is useful as a learning project because it combines many concepts together.
 
@@ -2535,7 +2535,7 @@ to manipulate that data.
 
 ---
 
-# 🧰 Useful JavaScript Patterns Used
+#  Useful JavaScript Patterns Used
 
 ## `.map()`
 
@@ -2608,7 +2608,7 @@ cast.slice(0, 8).forEach(actor => {
 
 ---
 
-# 🧱 How to Build a Similar Project From Scratch
+#  How to Build a Similar Project From Scratch
 
 If you're building your own API-based movie application, don't start by writing everything at once.
 
@@ -2831,9 +2831,9 @@ instead of duplicating the template.
 
 ---
 
-# 🔐 Security Considerations
+#  Security Considerations
 
-## ⚠️ Never commit API credentials
+## Never commit API credentials
 
 The original project code contains a TMDB Bearer token and session information.
 
@@ -2845,7 +2845,7 @@ For a production application, API credentials that must remain secret should be 
 
 ---
 
-# ⚠️ localStorage Is Not Authentication
+#  localStorage Is Not Authentication
 
 The registration system in this project is suitable as a **frontend learning/demo feature**.
 
@@ -2881,7 +2881,7 @@ This distinction is important when moving from a portfolio project to a producti
 
 ---
 
-# 🚀 Possible Improvements
+# Possible Improvements
 
 The current project works as a frontend learning application, but several things could be improved.
 
@@ -3058,7 +3058,7 @@ for parallel requests when appropriate.
 
 ---
 
-# 🧭 Mental Model for Building API Applications
+#  Mental Model for Building API Applications
 
 When learning APIs, don't memorize individual requests.
 
@@ -3125,7 +3125,7 @@ This way of thinking is much more transferable than memorizing TMDB-specific cod
 
 ---
 
-# 🎓 What This Project Teaches
+#  What This Project Teaches
 
 This project demonstrates a surprisingly large collection of frontend concepts:
 
@@ -3184,130 +3184,3 @@ This project demonstrates a surprisingly large collection of frontend concepts:
 - Dynamic navigation
 
 ---
-
-# ⭐ The Core Lesson
-
-The most important thing to take from this project is not:
-
-> "How do I make a movie website?"
-
-It is:
-
-> **How do I take external structured data, understand its structure, transform it, and build an interactive application around it?**
-
-The general architecture is:
-
-```text
-External API
-     │
-     ▼
-HTTP Request
-     │
-     ▼
-JSON
-     │
-     ▼
-JavaScript Objects
-     │
-     ▼
-Business Logic
-     │
-     ▼
-Transformed Data
-     │
-     ▼
-HTML / DOM
-     │
-     ▼
-User Interaction
-     │
-     ▼
-State Changes
-     │
-     ▼
-API / localStorage
-```
-
-Once you understand this pattern, you can apply essentially the same thinking to:
-
-```text
-Weather APIs
-GitHub APIs
-E-commerce APIs
-News APIs
-Social APIs
-Maps APIs
-Payment APIs
-IoT APIs
-AI APIs
-Backend REST APIs
-```
-
-The API changes.
-
-The fundamental engineering process does not.
-
----
-
-# 📌 Quick Reference
-
-If you are starting a similar project, remember this sequence:
-
-```text
-1. Understand the API
-        ↓
-2. Define configuration
-        ↓
-3. Define endpoints
-        ↓
-4. Build URL helper
-        ↓
-5. Build reusable request function
-        ↓
-6. Inspect JSON response
-        ↓
-7. Understand the object structure
-        ↓
-8. Render one object
-        ↓
-9. Render arrays
-        ↓
-10. Add search
-        ↓
-11. Add filtering
-        ↓
-12. Add details
-        ↓
-13. Add local state
-        ↓
-14. Add event delegation
-        ↓
-15. Refactor duplicated logic
-        ↓
-16. Add error handling
-        ↓
-17. Secure sensitive credentials
-```
-
----
-
-# 🐾 Final Note
-
-CatFlix is a good example of moving from:
-
-```text
-"Call an API and display something"
-```
-
-toward:
-
-```text
-"Understand an external data model,
-design an application around it,
-manage state,
-transform data,
-and connect asynchronous operations
-to an interactive UI."
-```
-
-That transition is one of the most important steps from beginner frontend practice toward actual application development.
